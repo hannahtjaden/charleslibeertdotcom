@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'futura-cd-bld';
+    src: url('font/futura-cd-bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'futura-book';
+    src: url('font/futura-book.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root{
+    --pad: .4em;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'futura-book', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    padding: var(--pad);
+    height: 100svh;
+    gap: var(--pad);
+}
+
+header{
+    /* background: green; */
+    padding: 0;
+    margin: 0;
+}
+
+header img{
+    display: block;
+}
+
+main{
+    max-width: 100%;
+    /* background: orange; */
+    flex: 1;
+}
+
+#logo{
+    max-width: 1000px;
+}
+
+#mainImage{
+    display: block;
+    max-width: 1200px;
+    padding: 0;
+    margin: 0;
+}
+
+figure,
+img,
+figcaption{
+    padding: 0px;
+}
+
+figure{
+    /* background-color: orangered; */
+    cursor: pointer;
+    max-width: 100%;
+    height: 100%;
+    align-items: flex-start;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+figure img{
+    max-height: 70svh;
+    max-width: 100%;
+    /* object-fit: cover; */
+
+}
